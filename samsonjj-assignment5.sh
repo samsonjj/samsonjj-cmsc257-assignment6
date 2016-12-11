@@ -25,23 +25,19 @@ do
    	do 
 		#d count
 		if [[ $word =~ $reD ]]; then
-	    		echo ' matching word: '$word
 			dCount=$((dCount+1))
 		fi
 		#a count
 		if [[ $word =~ $reA ]]; then
-                        echo ' matching word: '$word
                         aCount=$((aCount+1))
                 fi
 		#num count
 		if [[ $word =~ $reN ]]; then
-                        echo ' matching num: '$word
                         numCount=$((numCount+1))
                 fi
 
 		#alnum count
                 if [[ $word =~ $reALNUM ]]; then
-                        echo ' matching alnum: '$word
                         alnumCount=$((alnumCount+1))
                 fi
 
